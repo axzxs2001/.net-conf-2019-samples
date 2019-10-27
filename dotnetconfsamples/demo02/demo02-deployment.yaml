@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo02
+spec:
+  selector:
+    matchLabels:
+      app: demo02
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: demo02
+    spec:
+      volumes:
+        - name: configuration
+          hostPath:
+            path: /var/data
+      containers:
+      - name: demo02
+        image: gsw/demo02:v1.0.0
+        imagePullPolicy: IfNotPresent #从本地镜像里拉取
+        ports:
+        - containerPort: 81
+        volumeMounts:
+          - name: configuration
+            mountPath: /app/configuration
