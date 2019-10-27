@@ -22,7 +22,7 @@ namespace demo01
                 {
                     webBuilder.ConfigureAppConfiguration((hostingContext, config) =>
                     {
-                        config.AddJsonFile("configuration/appsettings.json", optional: true, reloadOnChange: true);
+                        config.AddYamlFile("configuration/appsettings.yaml");               
                     });
                     webBuilder.UseStartup<Startup>();
                 });

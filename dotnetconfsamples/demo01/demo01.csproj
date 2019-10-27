@@ -5,12 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Update="configuration\appsettings.Development.json">
+    <None Remove="configuration\appsettings.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="configuration\appsettings.yaml">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Content>
-    <Content Update="configuration\appsettings.json">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="YamlDotNet" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
