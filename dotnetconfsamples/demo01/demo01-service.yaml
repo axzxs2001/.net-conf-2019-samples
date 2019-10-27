@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo01-service
+  labels:
+    app: demo01-service
+spec:
+  selector:
+    app: demo01
+  type: NodePort  #用主机IP:31000访问
+  ports:
+    - name: default
+      nodePort: 31000 #用主机IP:31000访问
+      protocol: TCP
+      port: 80
+      targetPort: 80
