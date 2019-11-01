@@ -22,7 +22,7 @@ namespace demo01
                 {
                     webBuilder.ConfigureAppConfiguration((hostingContext, config) =>
                     {
-                        config.AddYamlFile("configuration/appsettings.yaml");               
+                        config.AddYamlFile("/configuration/appsettings");
                     });
                     webBuilder.UseStartup<Startup>();
                 });

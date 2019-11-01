@@ -13,9 +13,9 @@ spec:
         app: demo01
     spec:
       volumes:
-        - name: configuration
-          hostPath:
-            path: /var/data
+        - name: appsettings
+          configMap:
+            name: appsettings
       containers:
       - name: demo01
         image: gsw/demo01:v1.0.0
@@ -23,5 +23,6 @@ spec:
         ports:
         - containerPort: 80
         volumeMounts:
-          - name: configuration
-            mountPath: /app/configuration
+          - name: appsettings
+            mountPath: /configuration
+            readOnly: true

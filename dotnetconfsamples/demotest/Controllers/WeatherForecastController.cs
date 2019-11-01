@@ -26,13 +26,14 @@ namespace demotest.Controllers
         [HttpGet]
         public string Get()
         {
-            var file = "";
-            foreach (var f in Directory.GetFiles("/configuration"))
+            try
             {
-                file += System.IO.File.ReadAllText(f);
+                return _configuration.GetConnectionString("Postgre");
             }
-            return _configuration.GetConnectionString("Postgre") + "     " +file;
-
+            catch (Exception exc)
+            {
+                return exc.Message;
+            }
         }
     }
 }

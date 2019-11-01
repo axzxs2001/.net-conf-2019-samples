@@ -17,13 +17,16 @@ sudo kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl v
 //让master可以部署应用
 sudo kubectl taint nodes --all node-role.kubernetes.io/master-
 
+//创建configmap 配置文件
+sudo kubectl create configmap appsettings  --from-file=appsettings=/var/data/appsettings.yaml
+
 //build镜像
-sudo docker build -t gsw/demo02:v1.0.0 .
+sudo docker build -t gsw/demotest:v1.0.0 .
 
 //部署应用
-sudo kubectl apply -f demo02-deployment.yaml
+sudo kubectl apply -f demotest-deployment.yaml
 
 //部署服务
-sudo kubectl apply -f demo02-service.yaml
+sudo kubectl apply -f demotest-service.yaml
 
 

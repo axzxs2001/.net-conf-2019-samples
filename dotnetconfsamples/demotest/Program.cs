@@ -20,10 +20,10 @@ namespace demotest
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    //webBuilder.ConfigureAppConfiguration((hostingContext, config) =>
-                    //{
-                    //    config.AddYamlFile("configuration/appsettings.yaml");
-                    //});
+                    webBuilder.ConfigureAppConfiguration((hostingContext, config) =>
+                    {
+                        config.AddYamlFile("/configuration/appsettings");
+                    });
                     webBuilder.UseUrls("http://*:82");
                     webBuilder.UseStartup<Startup>();
                 });
