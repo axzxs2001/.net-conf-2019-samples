@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using YamlDotNet.Serialization;
 
-namespace demo01
+namespace YamlConfiguration
 {
     /// <summary>
     /// Yaml配置文件的提供者

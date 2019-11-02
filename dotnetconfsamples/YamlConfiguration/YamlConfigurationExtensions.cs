@@ -2,7 +2,7 @@
 using Microsoft.Extensions.FileProviders;
 using System;
 
-namespace demo02
+namespace YamlConfiguration
 {
     public static class YamlConfigurationExtensions
     {

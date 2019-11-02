@@ -20,6 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\YamlConfiguration\YamlConfiguration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="demo01-deployment.yaml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

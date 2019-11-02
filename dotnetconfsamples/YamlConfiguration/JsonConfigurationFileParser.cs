@@ -7,7 +7,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 
-namespace demo01
+namespace YamlConfiguration
 {
     /// <summary>
     /// 借鸡下蛋的类，可以自己定义处理yaml的类

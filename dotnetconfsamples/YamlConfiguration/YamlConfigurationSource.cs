@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace demo02
+namespace YamlConfiguration
 {
     /// <summary>
     /// yaml配置源
