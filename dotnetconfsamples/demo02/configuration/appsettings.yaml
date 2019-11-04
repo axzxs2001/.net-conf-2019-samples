@@ -5,4 +5,4 @@ Logging:
     Microsoft.Hosting.Lifetime: "Information"
 AllowedHosts: "*"
 ConnectionStrings: 
-  Postgre: "Server=192.168.0.11;Port=5432;UserId=postgres;Password=postgres2018;Database=postgres;Pooling=true;MinPoolSize=1;MaxPoolSize=100;CommandTimeout=300;"
+  Postgre: "Server=192.168.0.8;Port=5432;UserId=postgres;Password=postgres2018;Database=postgres;Pooling=true;MinPoolSize=1;MaxPoolSize=100;CommandTimeout=300;"

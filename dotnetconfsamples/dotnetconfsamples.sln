@@ -7,12 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo01", "demo01\demo01.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo02", "demo02\demo02.csproj", "{77EDEE99-73A9-4CB2-930D-DFD0DBF40778}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YamlConfiguration", "YamlConfiguration\YamlConfiguration.csproj", "{5EB9FF23-9F3E-4CF2-8037-BE7340CA48AC}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ppt", "ppt", "{EEF5D2EA-26DA-4903-BEA2-FB22D88197EF}"
-	ProjectSection(SolutionItems) = preProject
-		ppt\dnc在k8s上的开发实践.pptx = ppt\dnc在k8s上的开发实践.pptx
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YamlConfiguration", "YamlConfiguration\YamlConfiguration.csproj", "{5EB9FF23-9F3E-4CF2-8037-BE7340CA48AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
