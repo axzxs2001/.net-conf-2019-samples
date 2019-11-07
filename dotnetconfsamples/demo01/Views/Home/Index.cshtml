@@ -6,7 +6,12 @@
 <div class="text-center">
     <h2 class="display-4">Welcome @Environment.MachineName</h2>
     <p>
+
         @configuration.GetSection("ConnectionStrings").GetSection("Postgre").Value
     </p>
+    <p>
+        @ViewBag.fiels
+    </p>
+
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

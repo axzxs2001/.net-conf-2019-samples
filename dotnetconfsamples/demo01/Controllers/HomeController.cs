@@ -20,6 +20,20 @@ namespace demo01.Controllers
 
         public IActionResult Index()
         {
+            try
+            {
+                var fileStr = "";
+                foreach (var file in System.IO.Directory.GetFiles("/configuration"))
+                {
+                    fileStr += file + "   |   ";
+
+                }
+                ViewBag.fiels = fileStr;
+            }
+            catch (Exception exc)
+            {
+                ViewBag.fiels = exc.Message;
+            }
             return View();
         }
 

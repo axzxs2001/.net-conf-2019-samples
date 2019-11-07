@@ -18,7 +18,7 @@ sudo kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl v
 sudo kubectl taint nodes --all node-role.kubernetes.io/master-
 
 //创建configmap 配置文件
-sudo kubectl create configmap appsettings  --from-file=appsettings=/var/data/appsettings.yaml
+sudo kubectl create configmap appsettings  --from-file=/var/data/
 
 //build镜像
 sudo docker build -t gsw/demo01:v1.0.0 .
