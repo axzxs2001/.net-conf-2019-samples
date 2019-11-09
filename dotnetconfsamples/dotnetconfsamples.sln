@@ -15,6 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Videos", "Videos", "{6EC90A
 		Videos\demo02.wmv = Videos\demo02.wmv
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{577EB034-45B7-4BE7-AA5B-F93A813EBC9F}"
+	ProjectSection(SolutionItems) = preProject
+		dnc在k8s上的开发实践.pptx = dnc在k8s上的开发实践.pptx
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
