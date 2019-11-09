@@ -9,6 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo02", "demo02\demo02.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YamlConfiguration", "YamlConfiguration\YamlConfiguration.csproj", "{5EB9FF23-9F3E-4CF2-8037-BE7340CA48AC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Videos", "Videos", "{6EC90AC5-CA64-44AF-8699-933B7C41DE12}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Users\gsw\Desktop\.net conf 2019\demo01.wmv = ..\..\..\..\..\Users\gsw\Desktop\.net conf 2019\demo01.wmv
+		..\..\..\..\..\Users\gsw\Desktop\.net conf 2019\demo02.wmv = ..\..\..\..\..\Users\gsw\Desktop\.net conf 2019\demo02.wmv
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

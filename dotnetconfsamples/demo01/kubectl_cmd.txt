@@ -1,4 +1,4 @@
-
+//提前安装docker和kubeadmin
 //重置kubernetes
 sudo kubeadm reset
 
